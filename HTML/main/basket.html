@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kids-Gallery</title>
+    <title>Shmot</title>
     <link rel="stylesheet" href="../../CSS/input.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-
@@ -11,15 +11,15 @@
 <body>
 <div id="wrapper">
     <header>
-        <a href="index.html"><img src="../../images/header/logo.jpg" id="logo"></a>
+        <a href="../main/index.html"><img src="../../images/header/logo.jpg" id="logo"></a>
         <ul id="navbar">
-            <li class="list" id="woman"><a href="#">Women</a></li>
-            <li class="list"><a href="#">Men</a></li>
-            <li class="list"><a href="#">Kids</a></li>
-            <li class="list"><a href="#">Coming soon</a></li>
-            <li class="list"><a href="#">About</a></li>
+            <li class="list" id="woman"><a href="../main-women/main-women.html">Women</a></li>
+            <li class="list"><a href="../main-men/main-men.html">Men</a></li>
+            <li class="list"><a href="../main-kids/main-kids.html">Kids</a></li>
+            <li class="list"><a href="../main/joke.html">Coming soon</a></li>
+            <li class="list"><a href="../main/about.html">About</a></li>
         </ul>
-        <div id="block-search"><i class="fas fa-search"></i></div>
+        <div id="block-search" onclick="mainSearch()"><i class="fas fa-search"></i></div>
         <div id="basket">
             <i class="fas fa-shopping-bag"></i>
             <p class="basket-icon">Basket (0)</p>
@@ -27,38 +27,40 @@
     </header>
 
     <hr noshade size="2">
-    <!----------------------------------------------------------------------------------------------------------------->
-
+    <!--------------------------------------------------------------------------------------------------------------------->
     <main>
-    <h2 class="goods-h2">Boys</h2>
-    <p class="goods-a"><a href="#" class="goods-a">show more</a></p>
-    <div class="card-flex" id="main-kids-boys"></div>
-
-    <h2 class="goods-h2">Girls</h2>
-    <p class="goods-a"><a href="#" class="goods-a">show more</a></p>
-    <div class="card-flex" id="main-kids-girls"></div>
-
-    <div id="slider">
-        <div id="polosa">
-            <img src="../../images/main-slider/main-slider-1.jpg">
-            <img src="../../images/main-slider/main-slider-2.jpg">
-            <img src="../../images/main-slider/main-slider-3.jpg">
-            <img src="../../images/main-slider/main-slider-4.jpg">
-            <img src="../../images/main-slider/main-slider-5.jpg">
-            <img src="../../images/main-slider/main-slider-6.jpg">
-            <img src="../../images/main-slider/main-slider-7.jpg">
-            <img src="../../images/main-slider/main-slider-8.jpg">
-            <img src="../../images/main-slider/main-slider-9.jpeg">
-            <img src="../../images/main-slider/main-slider-10.jpg">
-            <img src="../../images/main-slider/main-slider-11.jpg">
-            <img src="../../images/main-slider/main-slider-12.jpg">
+        <div id="basket-div-h">
+            <h1 id="basket-h1">Your Shopping Bag</h1>
+            <h3 id="basket-h3"><link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">Items reserved for limited time only</h3>
         </div>
-    </div>
-    <button id="slider-left"><i class="fas fa-chevron-left fa-3x"></i></button>
-    <button id="slider-right"><i class="fas fa-chevron-right fa-3x"></i></button>
-    </main>
 
-    <!----------------------------------------------------------------------------------------------------------------->
+        <table border="1px" id="basket-table">
+            <tr>
+                <th id="basket-width-1">PRODUCT</th>
+                <th id="basket-width-2">DESCRIPTION</th>
+                <th id="basket-width-3">SIZE</th>
+                <th id="basket-width-4">QTY</th>
+                <th id="basket-width-5">AMOUT</th>
+                <th id="basket-width-6">Cancel</th>
+            </tr>
+            <tr><td><div id="basket-div-img"><img src="../../images/main-photo/men/Sneakers/men-sneakers-1/men-sneakers-1-1.jpg" id="basket-img">
+            </div></td><td id="basket-name-td">ADIDAS<br><p>HUARACHE</p></td><td>41</td><td>2</td><td>99.95$</td><td><a href="#" class="x">X</a></td></tr>
+            <tr><td><div id="basket-div-img"><img src="../../images/main-photo/men/Sneakers/men-sneakers-2/men-sneakers-2-1.jpg" id="basket-img">
+            </div></td><td id="basket-name-td">ADIDAS<br><p>HUARACHE</p></td><td>41</td><td>2</td><td>99.95$</td><td><a href="#" class="x">X</a></td></tr>
+            <tr><td><div id="basket-div-img"><img src="../../images/main-photo/men/Sneakers/men-sneakers-3/men-sneakers-3-1.jpg" id="basket-img">
+            </div></td><td id="basket-name-td">ADIDAS<br><p>HUARACHE</p></td><td>41</td><td>2</td><td>99.95$</td><td><a href="#" class="x">X</a></td></tr>
+        </table>
+
+        <div id="basket-subtotal">
+            <h4 id="basket-h4">Subtotal:</h4>
+        </div>
+
+        <div id="basket-order">
+            <a href="#" id="a-order">CONTINUE SHOPPING</a>
+            <a href="#" id="basket-button">ORDER NOW</a>
+        </div>
+    </main>
+    <!--------------------------------------------------------------------------------------------------------------------->
     <hr noshade size="2">
 
     <footer>
@@ -108,8 +110,7 @@
     </footer>
 </div>
 
-<script src="../../JS/main.js"></script>
-<script src="../../JS/main-kids.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>

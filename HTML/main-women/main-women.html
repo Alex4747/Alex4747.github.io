@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../CSS/input.css">
+    <title>Women-Gallery</title>
+    <link rel="stylesheet" href="../../CSS/input.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-
     fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -11,7 +11,7 @@
 <body>
 <div id="wrapper">
     <header>
-        <a href="index.html"><img src="../images/header/logo.jpg" id="logo"></a>
+        <a href="index.html"><img src="../../images/header/logo.jpg" id="logo"></a>
         <ul id="navbar">
             <li class="list" id="woman"><a href="#">Women</a></li>
             <li class="list"><a href="#">Men</a></li>
@@ -29,56 +29,38 @@
     <hr noshade size="2">
     <!----------------------------------------------------------------------------------------------------------------->
 
+    <main>
     <h2 class="goods-h2">Shoes</h2>
     <p class="goods-a"><a href="#" class="goods-a">show more</a></p>
-
-    <div class="card-flex">
-        <a href="">
-            <div class="card">
-                <img src="../images/main-photo/men/Shoes/men-shoes-/men-shoes--.jpg" alt="">
-                <hr>
-                <h2>NIKE</h2>
-                <h3>sfsdfsdfsdfsdfsdfsdfsdf</h3>
-                <h1>149.99$</h1>
-            </div>
-        </a>
-
-        <a href="">
-            <div class="card">
-                <img src="../images/main-photo/men/Shoes/men-shoes-2/men-shoes-2-.jpg" alt="">
-                <hr>
-                <h2>NIKE</h2>
-                <h3>sfsdfsdfsdfsdfsdfsdfsdf</h3>
-                <h1>149.99$</h1>
-            </div>
-        </a>
-
-        <a href="">
-            <div class="card">
-                <img src="../images/main-photo/men/Shoes/men-shoes-3/men-shoes-3-.jpg" alt="">
-                <hr>
-                <h2>NIKE</h2>
-                <h3>sfsdfsdfsdfsdfsdfsdfsdf</h3>
-                <h1>149.99$</h1>
-            </div>
-        </a>
-
-        <a href="">
-            <div class="card">
-                <img src="../images/main-photo/men/Shoes/men-shoes-4/men-shoes-4-.jpg" alt="">
-                <hr>
-                <h2>NIKE</h2>
-                <h3>sfsdfsdfsdfsdfsdfsdfsdf</h3>
-                <h1>149.99$</h1>
-            </div>
-        </a>
-    </div>
+    <div class="card-flex" id="main-women-shoes"></div>
 
     <h2 class="goods-h2">Sneakers</h2>
     <p class="goods-a"><a href="#" class="goods-a">show more</a></p>
+    <div class="card-flex" id="main-women-sneakers"></div>
 
     <h2 class="goods-h2">Boots</h2>
     <p class="goods-a"><a href="#" class="goods-a">show more</a></p>
+    <div class="card-flex" id="main-women-boots"></div>
+
+    <div id="slider">
+        <div id="polosa">
+            <img src="../../images/main-slider/main-slider-1.jpg">
+            <img src="../../images/main-slider/main-slider-2.jpg">
+            <img src="../../images/main-slider/main-slider-3.jpg">
+            <img src="../../images/main-slider/main-slider-4.jpg">
+            <img src="../../images/main-slider/main-slider-5.jpg">
+            <img src="../../images/main-slider/main-slider-6.jpg">
+            <img src="../../images/main-slider/main-slider-7.jpg">
+            <img src="../../images/main-slider/main-slider-8.jpg">
+            <img src="../../images/main-slider/main-slider-9.jpeg">
+            <img src="../../images/main-slider/main-slider-10.jpg">
+            <img src="../../images/main-slider/main-slider-11.jpg">
+            <img src="../../images/main-slider/main-slider-12.jpg">
+        </div>
+    </div>
+    <button id="slider-left"><i class="fas fa-chevron-left fa-3x"></i></button>
+    <button id="slider-right"><i class="fas fa-chevron-right fa-3x"></i></button>
+    </main>
 
     <!----------------------------------------------------------------------------------------------------------------->
     <hr noshade size="2">
@@ -130,7 +112,8 @@
     </footer>
 </div>
 
-<script src="../JS/main.js"></script>
+<script src="../../JS/main.js"></script>
+<script src="../../JS/main-women.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>
