@@ -13,7 +13,7 @@ function main_Women_Shoes(id, number, type) {
             for (var i = number; i < number + 4; i++){
                 if (bd[i]['type'] = type) {
                     id.innerHTML +=
-                        "<a class='qwe'>" +
+                        "<a href='#' class='qwe'>" +
                         "<div class='card'>" +
                         "<img src=" + bd[i]['img-1'] + ">" +
                         "<hr>" +
@@ -51,7 +51,7 @@ function main_Women_Shoes_All(id, number) {
             bd = JSON.parse(xhr.responseText);
             for (var i = number; i < number + 12; i++) {
                 id.innerHTML +=
-                    "<a class='qwe'>" +
+                    "<a href='#' class='qwe'>" +
                     "<div class='card'>" +
                     "<img src=" + bd[i]['img-1'] + ">" +
                     "<hr>" +
