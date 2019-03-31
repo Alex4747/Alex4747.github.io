@@ -1,36 +1,36 @@
-// var mainMenShoes = document.getElementById('main-men-shoes');
-// var mainMenSneakers = document.getElementById('main-men-sneakers');
-// var mainMenBoots = document.getElementById('main-men-boots');
-//
-// function main_Men_Shoes(id, number) {
-//     var xhr = new XMLHttpRequest();
-//     var bd;
-//     xhr.open("GET", "../../json/BD.json");
-//
-//     xhr.addEventListener("readystatechange", function () {
-//         if (xhr.readyState == 4 && xhr.status == 200) {
-//             bd = JSON.parse(xhr.responseText);
-//             for (var i = number; i < number + 4; i++){
-//                     id.innerHTML +=
-//                         "<a href='#' class='qwe'>" +
-//                         "<div class='card'>" +
-//                         "<img src=" + bd[i]['img-1'] + ">" +
-//                         "<hr>" +
-//                         "<h2>" + bd[i]['firm'] + "</h2>" +
-//                         "<h3>" + bd[i]['name'] + "</h3>" +
-//                         "<h1>" + bd[i]['price'] + "</h1>" +
-//                         "</div>" +
-//                         "</a>";
-//                 }
-//             }
-//
-//     });
-//     xhr.send();
-// }
-// main_Men_Shoes(mainMenShoes, 0);
-// main_Men_Shoes(mainMenSneakers, 12);
-// main_Men_Shoes(mainMenBoots, 24);
-//
+ var mainMenShoes = document.getElementById('main-men-shoes');
+ var mainMenSneakers = document.getElementById('main-men-sneakers');
+ var mainMenBoots = document.getElementById('main-men-boots');
+
+ function main_Men_Shoes(id, number) {
+     var xhr = new XMLHttpRequest();
+     var bd;
+     xhr.open("GET", "../../json/BD.json");
+
+     xhr.addEventListener("readystatechange", function () {
+         if (xhr.readyState == 4 && xhr.status == 200) {
+             bd = JSON.parse(xhr.responseText);
+             for (var i = number; i < number + 4; i++){
+                     id.innerHTML +=
+                         "<a href='#' class='qwe'>" +
+                         "<div class='card'>" +
+                         "<img src=" + bd[i]['img-1'] + ">" +
+                         "<hr>" +
+                         "<h2>" + bd[i]['firm'] + "</h2>" +
+                         "<h3>" + bd[i]['name'] + "</h3>" +
+                         "<h1>" + bd[i]['price'] + "</h1>" +
+                         "</div>" +
+                         "</a>";
+                 }
+             }
+
+     });
+     xhr.send();
+ }
+ main_Men_Shoes(mainMenShoes, 0);
+ main_Men_Shoes(mainMenSneakers, 12);
+ main_Men_Shoes(mainMenBoots, 24);
+
 // /*--------------------------------------------------------------------------------------------------------------------*/
 
 var mainMenShoesAll = document.getElementById('main-men-shoes-all');
@@ -50,7 +50,7 @@ function main_Men_Shoes_All(id, number) {
                 data-id=" + bd[i]["id"]
 */
                 id.innerHTML +=
-                    "<a href='http://localhost:63342/ST-34-85/HTML/main/product.html?_ijt=rnhpogjukbvcnvg560jotek0ii#=bd[i][\"id\"]' class='qwe'>" +
+                    `<a href='http://localhost:63342/ST-34-85/HTML/main/product.html?_ijt=rnhpogjukbvcnvg560jotek0ii#=${bd[i]["id"]}' class='qwe'>` +
                     "<div class='card'>" +
                     "<img src=" + bd[i]['img-1'] + ">" +
                     "<hr>" +
@@ -67,7 +67,6 @@ function main_Men_Shoes_All(id, number) {
     main_Men_Shoes_All(mainMenShoesAll, 0);
     main_Men_Shoes_All(mainMenSneakersAll, 12);
     main_Men_Shoes_All(mainMenBootsAll, 24);
-
 
 /*var items = [{id: 1, title: 'Nike'},{id: 2, title: 'Puma'},{id: 3, title: 'Adidas'}]; // это набор всех наших товаров, к примеру
 

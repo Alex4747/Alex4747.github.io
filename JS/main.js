@@ -34,3 +34,17 @@ stop.addEventListener('click', () => {
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
+var search = document.getElementById('block_search');
+
+search.onclick = function() {
+    search.innerHTML +=
+        "<a href='http://localhost:63342/ST-34-85/HTML/main/product.html?_ijt=rnhpogjukbvcnvg560jotek0ii#=bd[i][\"id\"]' class='qwe'>" +
+        "<div class='card'>" +
+        "<img src=" + bd[i]['img-1'] + ">" +
+        "<hr>" +
+        "<h2>" + bd[i]['firm'] + "</h2>" +
+        "<h3>" + bd[i]['name'] + "</h3>" +
+        "<h1>" + bd[i]['price'] + "</h1>" +
+        "</div>" +
+        "</a>";
+};
