@@ -2,37 +2,6 @@
  var mainMenSneakers = document.getElementById('main-men-sneakers');
  var mainMenBoots = document.getElementById('main-men-boots');
 
- // var database;
-
- // function loadDb() {
- //     var xhr = new XMLHttpRequest();
- //     xhr.open("GET", "../../json/BD.json");
- //
- //     xhr.addEventListener("readystatechange", function () {
- //         if (xhr.readyState == 4 && xhr.status == 200) {
- //             database = JSON.parse(xhr.responseText);
- //         }
- //     });
- //     xhr.send();
- // }
- //
- // function loadManShoes(){
- //     for (var i = number; i < number + 4; i++){
- //                 id.innerHTML +=
- //                     "<a href='#' class='qwe'>" +
- //                     "<div class='card'>" +
- //                     "<img src=" + bd[i]['img-1'] + ">" +
- //                     "<hr>" +
- //                     "<h2>" + bd[i]['firm'] + "</h2>" +
- //                     "<h3>" + bd[i]['name'] + "</h3>" +
- //                     "<h1>" + bd[i]['price'] + "</h1>" +
- //                     "</div>" +
- //                     "</a>";
- //             }
- // }
- //
- // loadDb();
-
  function main_Men_Shoes(id, number) {
      var xhr = new XMLHttpRequest();
      var bd;
@@ -47,7 +16,7 @@
                      `<a href='http://localhost:63342/ST-34-85/HTML/main/product.html?id=${bd[i]["id"]}' class='qwe'>` +
                      "<div class='card'>" +
                      "<img src=" + bd[i]['img-1'] + ">" +
-                     "<hr>" +
+                     /*"<hr>" +*/
                      "<h2>" + bd[i]['firm'] + "</h2>" +
                      "<h3>" + bd[i]['name'] + "</h3>" +
                      "<h1>" + bd[i]['price'] + "</h1>" +
@@ -85,7 +54,7 @@ function main_Men_Shoes_All(id, number) {
                     `<a href='http://localhost:63342/ST-34-85/HTML/main/product.html?id=${bd[i]["id"]}' class='qwe'>` +
                     "<div class='card'>" +
                     "<img src=" + bd[i]['img-1'] + ">" +
-                    "<hr>" +
+                    /*"<hr>" +*/
                     "<h2>" + bd[i]['firm'] + "</h2>" +
                     "<h3>" + bd[i]['name'] + "</h3>" +
                     "<h1>" + bd[i]['price'] + "</h1>" +
