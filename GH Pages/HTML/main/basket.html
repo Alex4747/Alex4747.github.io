@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shmot</title>
+    <link rel="stylesheet" href="../../CSS/input.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-
+    fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <a href="index.html"><img src="../../images/header/logo.jpg" id="logo"></a>
+        <ul id="navbar">
+            <li class="list" id="woman"><a href="../main-women/main-women.html">Women</a></li>
+            <li class="list"><a href="../main-men/main-men.html">Men</a></li>
+            <li class="list"><a href="../main-kids/main-kids.html">Kids</a></li>
+            <li class="list"><a href="joke.html">Coming soon</a></li>
+            <li class="list"><a href="about.html">About</a></li>
+        </ul>
+        <div class="header-flex">
+            <div id="block_search" onclick="mainSearch()"><i class="fas fa-search"></i></div>
+            <div id="basket">
+                <i class="fas fa-shopping-bag"></i>
+                <p class="basket-icon">Basket (0)</p>
+            </div>
+        </div>
+    </header>
+
+    <hr noshade size="2">
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <main>
+        <div id="basket-div-h">
+            <h1 id="basket-h1">Your Shopping Bag</h1>
+            <h3 id="basket-h3"><link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">Items reserved for limited time only</h3>
+        </div>
+
+        <table border="1px" id="basket-table">
+            <tr>
+                <th id="basket-width-1">PRODUCT</th>
+                <th id="basket-width-2">DESCRIPTION</th>
+                <th id="basket-width-3">SIZE</th>
+                <th id="basket-width-4">QTY</th>
+                <th id="basket-width-5">AMOUT</th>
+                <th id="basket-width-6">Cancel</th>
+            </tr>
+            <tr><td><div id="basket-div-img"><img src="../../images/main-photo/men/Sneakers/men-sneakers-1/men-sneakers-1-1.jpg" id="basket-img">
+            </div></td><td id="basket-name-td">ADIDAS<br><p>HUARACHE</p></td><td>41</td><td>2</td><td>99.95$</td><td><a href="#" class="x">X</a></td></tr>
+            <tr><td><div id="basket-div-img"><img src="../../images/main-photo/men/Sneakers/men-sneakers-2/men-sneakers-2-1.jpg" id="basket-img">
+            </div></td><td id="basket-name-td">ADIDAS<br><p>HUARACHE</p></td><td>41</td><td>2</td><td>99.95$</td><td><a href="#" class="x">X</a></td></tr>
+            <tr><td><div id="basket-div-img"><img src="../../images/main-photo/men/Sneakers/men-sneakers-3/men-sneakers-3-1.jpg" id="basket-img">
+            </div></td><td id="basket-name-td">ADIDAS<br><p>HUARACHE</p></td><td>41</td><td>2</td><td>99.95$</td><td><a href="#" class="x">X</a></td></tr>
+        </table>
+
+        <div id="basket-subtotal">
+            <h4 id="basket-h4">Subtotal:</h4>
+        </div>
+
+        <div id="basket-order">
+            <a href="#" id="a-order">CONTINUE SHOPPING</a>
+            <a href="#" id="basket-button">ORDER NOW</a>
+        </div>
+    </main>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <hr noshade size="2">
+
+    <footer>
+        <div class="div-padding ">
+            <ul>
+                <h3>COLLECTION</h3>
+                <li class="bottom"><a class="qwer" href="#">Women</a></li>
+                <li class="bottom"><a class="qwer" href="#">Men</a></li>
+                <li class="bottom"><a class="qwer" href="#">Kids</a></li>
+                <li class="bottom"><a class="qwer" href="#">Comming Soon</a></li>
+
+            </ul>
+        </div>
+        <div class="div-padding div-padding-left">
+            <ul>
+                <h3>SITE</h3>
+                <li class="bottom"><a class="qwer" href="#">Terms of Servico</a></li>
+                <li class="bottom"><a class="qwer" href="#">Privacy Policy</a></li>
+                <li class="bottom"><a class="qwer" href="#">Copyright Policy</a></li>
+                <li class="bottom"><a class="qwer" href="#">Press Kit</a></li>
+                <li class="bottom"><a class="qwer" href="#">Support</a></li>
+
+            </ul>
+        </div>
+        <div class="div-padding div-padding-left">
+            <ul>
+                <h3>SHOP</h3>
+                <li class="bottom"><a class="qwer" href="#">About us</a></li>
+                <li class="bottom"><a class="qwer" href="#">Shipping Metods</a></li>
+                <li class="bottom"><a class="qwer" href="#">Career</a></li>
+                <li class="bottom"><a class="qwer" href="#">Contact</a></li>
+
+            </ul>
+        </div>
+        <div class="div-padding div-padding-left">
+            <ul>
+                <h3>SOCIAL</h3>
+                <li class="bottom">Shoper is made with love in Warsaw,
+                    2019@ All rights reserved. EI Passion</li>
+                <div id="annotation">
+                    <a href="#"><div class="box qwer"><i class="fab fa-twitter"></i></div></a>
+                    <a href="#"><div class="box qwer"><i class="fab fa-facebook-f"></i></div></a>
+                    <a href="#"><div class="box qwer"><i class="fab fa-instagram"></i></div></a>
+                </div>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+</html>
